@@ -2,27 +2,18 @@
 using System.Collections;
 
 public class MainCamera : MonoBehaviour {
+	public Transform target;
 
-	public float moveTime = 2f;
-	private float currentTime;
-	private Vector3 movTarget;
-	private bool isMoving = false;
+	private Vector3 posOffset;
 
-	public void MoveX(float dx) {
-		movTarget = transform.position;
-		movTarget.x += dx;
-		isMoving = true;
-		currentTime = 0;
+	void Start ()
+	{
+		posOffset = target.position - transform.position;
 	}
 
-	void Update () {
-		if (isMoving) {
-			currentTime += Time.deltaTime;
-			transform.position = Vector3.Lerp(transform.position, movTarget, currentTime / moveTime);
-
-			if (currentTime >= moveTime) {
-				isMoving = false;
-			}
-		}
+	void Update ()
+	{
+		transform.position = Vector3.Lerp (transform.position, target.position - posOffset, Time.deltaTime);
+		transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation (target.position - transform.position), Time.deltaTime);
 	}
 }

@@ -16,7 +16,6 @@ public class Thing : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		print ("click");
 		road.goToStuff(transform);
 	}
 }

@@ -1,0 +1,17 @@
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/UnityEngine.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/UnityEditor.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Mono.Cecil.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Unity.DataContract.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/iuval/Mios/repos/Cuackeddon/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/iuval/Mios/repos/Cuackeddon/obj/Debug/Assembly-CSharp.dll
+/Users/iuval/Mios/repos/Cuackeddon/obj/Debug/Assembly-CSharp.dll.mdb
