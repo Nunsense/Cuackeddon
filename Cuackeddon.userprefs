@@ -1,13 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PathFinder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Road.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player.cs" Line="24" Column="23" />
       <File FileName="Assets/Scripts/SectionController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Road.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Thing.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Road.cs" Line="49" Column="53" />
+      <File FileName="Assets/Scripts/Thing.cs" Line="19" Column="27" />
       <File FileName="Assets/Scripts/MainCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets/PathFinder.cs" Line="30" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
