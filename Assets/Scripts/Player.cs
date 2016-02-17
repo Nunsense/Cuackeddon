@@ -4,14 +4,16 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
-	private float speed = 2f;
+	public float speed = 1.5f;
 	private Vector3 goTarget, goTarget2;
 	private bool isMoving;
 	private PathFinder pathFinder;
 	private List<Vector3> steps;
+	private Animation anim; 
 
 	void Awake() {
 		pathFinder = GetComponent<PathFinder>();
+		anim = GameObject.FindGameObjectWithTag("m01_fps_000_h").GetComponent<Animation>();
 	}
 
 	void Update() {
@@ -31,11 +33,14 @@ public class Player : MonoBehaviour {
 
 		steps = pathFinder.PathTo(target);
 		isMoving = steps.Count > 0; 
+		anim.wrapMode = WrapMode.Loop;
+		anim.Play ("Move01_F");
 	}
 
 	void OnCollisionEnter(Collision col) {
 		if (col.collider.tag == "Obstacle") {
 			isMoving = false;
+			anim.Stop ();
 		}
 	}
 }

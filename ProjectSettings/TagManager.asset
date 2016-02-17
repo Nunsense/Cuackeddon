@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Section
+  - m01_fps_000_h
   layers:
   - Default
   - TransparentFX

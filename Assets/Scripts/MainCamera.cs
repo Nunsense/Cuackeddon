@@ -14,6 +14,6 @@ public class MainCamera : MonoBehaviour {
 	void Update ()
 	{
 		transform.position = Vector3.Lerp (transform.position, target.position - posOffset, Time.deltaTime);
-		transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation (target.position - transform.position), Time.deltaTime);
+		//transform.rotation = Quaternion.Lerp (transform.rotation, Quaternion.LookRotation (target.position - transform.position), Time.deltaTime);
 	}
 }
