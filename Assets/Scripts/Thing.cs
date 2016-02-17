@@ -7,16 +7,15 @@ public class Thing : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		road = FindObjectOfType<Road>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		road = FindObjectOfType<Road>();
+		
 	}
 
 	void OnMouseDown() {
-		print ("click");
 		road.goToStuff(transform);
 	}
 }

@@ -8,52 +8,55 @@ public class Road : MonoBehaviour {
 	public Player player;
 
 	public int visibleFloors = 5;
-	public float floorL = 10;
-	public float halfFloorL;
+	public float floorLenght = 10;
+	private float changeFloorDistance;
+	private float nextFloorZ;
 
 	private GameObject[] floors;
 
-	private int currentFloor;
-	private MainCamera cam;
+	private int nextFloorIndex;
 
 	void Awake() {
-		halfFloorL = floorL / 2;
-		player.transform.position = new Vector3 (0,0.61f,0);
-		cam = FindObjectOfType<MainCamera>();
+		player.transform.position = new Vector3(0, 0.61f, 0);
+		changeFloorDistance = floorLenght * 2;
+		nextFloorZ = 0;
 	}
 
 	void Start() {
-		currentFloor = 0;
+		nextFloorIndex = 0;
 
 		floors = new GameObject[visibleFloors];
 		for (int i = 0; i < visibleFloors; i++) {
 			GameObject floor = GameObject.Instantiate(floorPrefavs[Random.Range(0, floorPrefavs.Length)]);
 			floors[i] = floor;
 			floor.transform.parent = transform;
-			floor.transform.localPosition = new Vector3(i * floorL, 0, 0);
+			floor.transform.localPosition = new Vector3(0, 0, nextFloorZ);
+			nextFloorZ += floorLenght; 
 		}
 	}
 
 	void Update() {
+		if (player.transform.position.z >= changeFloorDistance) {
+			changeFloorDistance += floorLenght;
+
+			NextFloor();
+		}
 	}
 
 	public void goToStuff(Transform trans) {
-		if (Vector3.Distance(player.gameObject.transform.position, trans.position) < 15) {
-			player.GoTo(trans.position);
+		float diff = trans.position.z - player.transform.position.z;
+		if (diff > 0 && diff < 15) { // Cant go back or too far forward
+			player.GoTo(trans.position + new Vector3(0, 0, -1));
 		}		
 	}
 
 	public void NextFloor() {
-		currentFloor++;
-		//cam.MoveX(floorL * currentFloor);
-		floors[fixIndex(currentFloor)].transform.localPosition = new Vector3((currentFloor) * floorL, 0, 0);
+		floors[nextFloorIndex].transform.localPosition = new Vector3(0, 0, nextFloorZ);
+		nextFloorIndex = fixIndex(nextFloorIndex + 1);
+		nextFloorZ += floorLenght;
 	}
 
 	private int fixIndex(int i) {
-		Debug.Log(i);
-		if (i < 0) i = floors.Length - i;
-		if (i > floors.Length - 1) i = i - (floors.Length - 1);
-		//Debug.Log(i);
-		return i;
+		return i % floors.Length;
 	}
 }

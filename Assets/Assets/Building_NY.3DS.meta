@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 93bb7696e944c4ff889b6682f0ec681d
+timeCreated: 1455132046
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bricks003
+    100002: bricks004
+    100004: bricks005
+    100006: bricks006
+    100008: bricks007
+    100010: bricks008
+    100012: Building w
+    100014: //RootNode
+    100016: Plane004
+    100018: Plane005
+    100020: Plane006
+    100022: Plane009
+    100024: Plane011
+    100026: Plane012
+    100028: Plane013
+    100030: Plane014
+    100032: Plane015
+    100034: Plane016
+    100036: Plane017
+    100038: Plane019
+    100040: Plane020
+    100042: Plane021
+    100044: Plane022
+    100046: Plane023
+    100048: Plane024
+    100050: Roof rail
+    100052: Roof rail0
+    100054: Roof rail1
+    100056: Roof rail_
+    100058: Sill rail
+    100060: SlidingDoo
+    100062: SlidingW10
+    100064: SlidingW11
+    100066: SlidingW12
+    100068: SlidingW13
+    100070: SlidingW14
+    100072: SlidingW15
+    100074: SlidingW16
+    100076: SlidingWi0
+    100078: SlidingWi1
+    100080: SlidingWi2
+    100082: SlidingWi3
+    100084: SlidingWi4
+    100086: SlidingWi5
+    100088: SlidingWi6
+    100090: SlidingWi7
+    100092: SlidingWi8
+    100094: SlidingWi9
+    100096: SlidingWin
+    100098: Sphere019
+    100100: Wall Brick
+    400000: bricks003
+    400002: bricks004
+    400004: bricks005
+    400006: bricks006
+    400008: bricks007
+    400010: bricks008
+    400012: Building w
+    400014: //RootNode
+    400016: Plane004
+    400018: Plane005
+    400020: Plane006
+    400022: Plane009
+    400024: Plane011
+    400026: Plane012
+    400028: Plane013
+    400030: Plane014
+    400032: Plane015
+    400034: Plane016
+    400036: Plane017
+    400038: Plane019
+    400040: Plane020
+    400042: Plane021
+    400044: Plane022
+    400046: Plane023
+    400048: Plane024
+    400050: Roof rail
+    400052: Roof rail0
+    400054: Roof rail1
+    400056: Roof rail_
+    400058: Sill rail
+    400060: SlidingDoo
+    400062: SlidingW10
+    400064: SlidingW11
+    400066: SlidingW12
+    400068: SlidingW13
+    400070: SlidingW14
+    400072: SlidingW15
+    400074: SlidingW16
+    400076: SlidingWi0
+    400078: SlidingWi1
+    400080: SlidingWi2
+    400082: SlidingWi3
+    400084: SlidingWi4
+    400086: SlidingWi5
+    400088: SlidingWi6
+    400090: SlidingWi7
+    400092: SlidingWi8
+    400094: SlidingWi9
+    400096: SlidingWin
+    400098: Sphere019
+    400100: Wall Brick
+    2300000: bricks003
+    2300002: bricks004
+    2300004: bricks005
+    2300006: bricks006
+    2300008: bricks007
+    2300010: bricks008
+    2300012: Building w
+    2300014: Plane004
+    2300016: Plane005
+    2300018: Plane006
+    2300020: Plane009
+    2300022: Plane011
+    2300024: Plane012
+    2300026: Plane013
+    2300028: Plane014
+    2300030: Plane015
+    2300032: Plane016
+    2300034: Plane017
+    2300036: Plane019
+    2300038: Plane020
+    2300040: Plane021
+    2300042: Plane022
+    2300044: Plane023
+    2300046: Plane024
+    2300048: Roof rail
+    2300050: Roof rail0
+    2300052: Roof rail1
+    2300054: Roof rail_
+    2300056: Sill rail
+    2300058: SlidingDoo
+    2300060: SlidingW10
+    2300062: SlidingW11
+    2300064: SlidingW12
+    2300066: SlidingW13
+    2300068: SlidingW14
+    2300070: SlidingW15
+    2300072: SlidingW16
+    2300074: SlidingWi0
+    2300076: SlidingWi1
+    2300078: SlidingWi2
+    2300080: SlidingWi3
+    2300082: SlidingWi4
+    2300084: SlidingWi5
+    2300086: SlidingWi6
+    2300088: SlidingWi7
+    2300090: SlidingWi8
+    2300092: SlidingWi9
+    2300094: SlidingWin
+    2300096: Sphere019
+    2300098: Wall Brick
+    3300000: bricks003
+    3300002: bricks004
+    3300004: bricks005
+    3300006: bricks006
+    3300008: bricks007
+    3300010: bricks008
+    3300012: Building w
+    3300014: Plane004
+    3300016: Plane005
+    3300018: Plane006
+    3300020: Plane009
+    3300022: Plane011
+    3300024: Plane012
+    3300026: Plane013
+    3300028: Plane014
+    3300030: Plane015
+    3300032: Plane016
+    3300034: Plane017
+    3300036: Plane019
+    3300038: Plane020
+    3300040: Plane021
+    3300042: Plane022
+    3300044: Plane023
+    3300046: Plane024
+    3300048: Roof rail
+    3300050: Roof rail0
+    3300052: Roof rail1
+    3300054: Roof rail_
+    3300056: Sill rail
+    3300058: SlidingDoo
+    3300060: SlidingW10
+    3300062: SlidingW11
+    3300064: SlidingW12
+    3300066: SlidingW13
+    3300068: SlidingW14
+    3300070: SlidingW15
+    3300072: SlidingW16
+    3300074: SlidingWi0
+    3300076: SlidingWi1
+    3300078: SlidingWi2
+    3300080: SlidingWi3
+    3300082: SlidingWi4
+    3300084: SlidingWi5
+    3300086: SlidingWi6
+    3300088: SlidingWi7
+    3300090: SlidingWi8
+    3300092: SlidingWi9
+    3300094: SlidingWin
+    3300096: Sphere019
+    3300098: Wall Brick
+    4300000: Building w
+    4300002: Wall Brick
+    4300004: Sill rail
+    4300006: Plane004
+    4300008: Roof rail
+    4300010: Sphere019
+    4300012: Plane005
+    4300014: Plane006
+    4300016: Plane009
+    4300018: Plane011
+    4300020: Plane012
+    4300022: Plane013
+    4300024: Plane014
+    4300026: Plane015
+    4300028: Plane016
+    4300030: SlidingWin
+    4300032: SlidingWi0
+    4300034: SlidingWi1
+    4300036: SlidingWi2
+    4300038: SlidingWi3
+    4300040: SlidingWi4
+    4300042: SlidingWi5
+    4300044: SlidingWi6
+    4300046: SlidingWi7
+    4300048: Roof rail_
+    4300050: bricks003
+    4300052: bricks004
+    4300054: Roof rail0
+    4300056: Roof rail1
+    4300058: bricks005
+    4300060: Plane017
+    4300062: Plane019
+    4300064: Plane020
+    4300066: SlidingWi8
+    4300068: SlidingWi9
+    4300070: SlidingW10
+    4300072: SlidingW11
+    4300074: SlidingW12
+    4300076: SlidingW13
+    4300078: Plane021
+    4300080: bricks006
+    4300082: bricks007
+    4300084: bricks008
+    4300086: Plane022
+    4300088: Plane023
+    4300090: Plane024
+    4300092: SlidingW14
+    4300094: SlidingW15
+    4300096: SlidingW16
+    4300098: SlidingDoo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
