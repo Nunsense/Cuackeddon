@@ -43,13 +43,6 @@ public class Road : MonoBehaviour {
 		}
 	}
 
-	public void goToStuff(Transform trans) {
-		float diff = trans.position.z - player.transform.position.z;
-		if (diff > 0 && diff < 15) { // Cant go back or too far forward
-			player.GoTo(trans.position + new Vector3(0, 0, -1));
-		}		
-	}
-
 	public void NextFloor() {
 		floors[nextFloorIndex].transform.localPosition = new Vector3(0, 0, nextFloorZ);
 		nextFloorIndex = fixIndex(nextFloorIndex + 1);

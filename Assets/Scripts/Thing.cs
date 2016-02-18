@@ -7,7 +7,6 @@ public class Thing : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		road = FindObjectOfType<Road>();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +15,5 @@ public class Thing : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		road.goToStuff(transform);
 	}
 }

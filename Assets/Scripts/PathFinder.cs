@@ -3,17 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class PathFinder : MonoBehaviour {
-	class Node {
-		public Node(float distance, Vector3 position) {
-			this.distance = distance;
-			this.position = position;
-		}
-
-		public float distance;
-		public Vector3 position;
-	}
-
-	public float stepLenght = 0.5f;
+	public float stepLenght = 0.8f;
 
 	Vector3[] testSteps = new Vector3[] { 
 		new Vector3(0, 0, -1),
@@ -26,15 +16,15 @@ public class PathFinder : MonoBehaviour {
 		new Vector3(-1, 0, 1)
 	};
 
-	public List<Vector3> PathTo(Vector3 target) {
-		List<Vector3> steps = new List<Vector3>();
+	public List<Node> PathTo(Vector3 target) {
+		List<Node> steps = new List<Node>();
 
 		FindPath(target, transform.position, steps, 0);
 
 		return steps;
 	}
 
-	bool FindPath(Vector3 target, Vector3 current, List<Vector3> steps, int n) {
+	bool FindPath(Vector3 target, Vector3 current, List<Node> steps, int n) {
 		if (n > 100)
 			return false;
 		if (Vector3.Distance(current, target) < 1f) {
@@ -61,12 +51,23 @@ public class PathFinder : MonoBehaviour {
 
 			for (int i = 0; i < nodes.Count; i++) {
 				bool reachedTarget = FindPath(target, nodes[i].position, steps, n + 1);
-				if (reachedTarget)
-					steps.Add(target);
+				if (reachedTarget) {
+					steps.Add(nodes[i]);
+				}
 			
 				return reachedTarget;
 			}
 		}
 		return false;
 	}
+}
+
+public class Node {
+	public Node(float distance, Vector3 position) {
+		this.distance = distance;
+		this.position = position;
+	}
+
+	public float distance;
+	public Vector3 position;
 }

@@ -74,7 +74,7 @@ public class LaserBeam : MonoBehaviour {
 		//print(myTransform.position + " ," + target.position);
 		Debug.DrawRay (myTransform.position, target.position - myTransform.position, Color.green);
 		int i = 0;
-		print (hit.Length);
+//		print (hit.Length);
 		while(i < hit.Length){
 			//Check to make sure we aren't hitting triggers but colliders
 			if(!hit[i].collider.isTrigger)
