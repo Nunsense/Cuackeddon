@@ -10,8 +10,11 @@ public class LaserBeam : MonoBehaviour {
 	public float laserWidth = 1.0f;
 	public float noise = 1.0f;
 	public float maxLength = 50.0f;
+	public float betweenTime = 3.0f;
+	public float laserTime = 1.0f;
 	public Color color = Color.red;
 	public Transform target;
+	public Light light;
 
 
 	LineRenderer lineRenderer;
@@ -23,10 +26,12 @@ public class LaserBeam : MonoBehaviour {
 	//The particle system, in this case sparks which will be created by the Laser
 	public ParticleSystem endEffect;
 	Vector3 offset;
+	float lastTime;
 
 
 	// Use this for initialization
 	void Start () {
+		lastTime = 0;
 		lineRenderer = GetComponent<LineRenderer>();
 		lineRenderer.SetWidth(laserWidth, laserWidth/5);
 		myTransform = transform;
@@ -38,7 +43,18 @@ public class LaserBeam : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		RenderLaser();
+		lastTime = lastTime + Time.deltaTime;
+		light.intensity = lastTime * 5 / betweenTime;
+		if (lastTime > betweenTime) {
+			lineRenderer.enabled = true;
+			light.intensity = 1;
+			RenderLaser();
+			if (lastTime > betweenTime + laserTime) {
+				lastTime = 0;
+				lineRenderer.enabled = false;
+			}
+		}
+
 	}
 
 	void RenderLaser(){
